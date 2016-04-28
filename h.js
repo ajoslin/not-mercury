@@ -1,1 +1,4 @@
-module.exports = require('virtual-dom/h');
+var attrToProp = require('hyperscript-attribute-to-property');
+var h = require('virtual-dom/h');
+
+module.exports = attrToProp(h);
